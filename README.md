@@ -3,14 +3,14 @@
 This is a beginning script that utilizes Grafana k6 to performance test the graphql/API for the WQ repository. 
 The script employs a lightweight graphql api call that serves as a proof of concept for Grafana k6 and performance testing.
 
-#Set Up
+# Set Up
 Make sure you have elasticsearch and the API for WQ set up and running. Here is the link: https://github.com/department-of-veterans-affairs/bip-work-queue-query
 
-#Grafana k6 Installation
+# Grafana k6 Installation
 Installation is straightforward. But, for M1 users, you can use homebrew and Windows users can use chocolatey or choco. Commands can be found here https://k6.io/docs/get-started/installation/
 I did not have much luck downloading through Docker but, be my guest. Feel free to use the examples as reference.
 
-#Grafana k6 Testing
+# Grafana k6 Testing
 The script in this repo uses the url and query from Perry's video here: https://boozallen-my.sharepoint.com/:v:/g/personal/582303_bah_com/EQNBn-HbW9dGhiK1S9hy85sBL__kVSao6-Sv5dR8_MrWCQ
 Briefly, this script has the JWT from the UI (https://work-queue-ui-dev.dev.bip.va.gov/) in the network tab.
 The data is stringified JSON being sent.
@@ -22,7 +22,7 @@ Based on those metrics, we will have a total of 200 iterations or requests.
 With the sleep set to 0.5seconds or 500 ms, we would expect 2 iterations/second times 10 users = 20 iterations (requests) per second
 The actual readout may reach but not sustain the 20 iterations per second based on ineffeciencies of idling vus (simulated users) that made a fast request.
 
-#Grafana k6 Visualization of Data
+# Grafana k6 Visualization of Data
 The results from running the script can be put out as a CSV as explained here with these terminal commands https://k6.io/docs/results-output/real-time/csv/
 The CSV may then be visualized by many platforms, including but not limited to Excel. 
 
