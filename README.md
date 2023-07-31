@@ -10,8 +10,9 @@ Make sure you have elasticsearch and the API for WQ set up and running. Here is 
 Installation is straightforward. But <br />
 Mac users: <br />
  * you can use homebrew `brew install k6`
-   
-Windows Users: <br />
+
+   <br />
+Windows Users:
  * Use chocolatey or choco `choco install k6`. <br />
  * Alternatively, use `winget install k6`.
 
