@@ -9,7 +9,8 @@ Make sure you have elasticsearch and the API for WQ set up and running. Here is 
 # Grafana k6 Installation
 Installation is straightforward. But <br />
 Mac users: <br />
- * you can use homebrew `brew install k6`  <br />
+ * you can use homebrew `brew install k6`
+   
 Windows Users: <br />
  * Use chocolatey or choco `choco install k6`. <br />
  * Alternatively, use `winget install k6`.
