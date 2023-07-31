@@ -7,11 +7,11 @@ The script employs a lightweight graphql api call that serves as a proof of conc
 Make sure you have elasticsearch and the API for WQ set up and running. Here is the link: https://github.com/department-of-veterans-affairs/bip-work-queue-query
 
 # Grafana k6 Installation
-Installation is straightforward. But__
-Mac users: </br>
- * you can use homebrew `brew install k6`  </br>
-Windows Users: </br>
- * Use chocolatey or choco `choco install k6`. </br>
+Installation is straightforward. But <br />
+Mac users: <br />
+ * you can use homebrew `brew install k6`  <br />
+Windows Users: <br />
+ * Use chocolatey or choco `choco install k6`. <br />
  * Alternatively, use `winget install k6`.
 
 Commands can be found here https://k6.io/docs/get-started/installation/.
