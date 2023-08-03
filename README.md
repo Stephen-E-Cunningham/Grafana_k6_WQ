@@ -33,7 +33,11 @@ Briefly,
 * The actual readout may reach but not sustain the 20 iterations per second based on ineffeciencies of idling vus (simulated users) that made a fast request.
 
 # Grafana k6 Visualization of Data
-The results from running the script can be put out as a CSV as explained here with these terminal commands https://k6.io/docs/results-output/real-time/csv/
-I used `k6 run --out csv=test_results.csv script.js `
-The CSV may then be visualized by many platforms, including but not limited to Excel. 
+Visualization is made easy with `xk6`. To install, make sure you have `Go` or `Golang` on your computer. 
+* Then type this command `go install go.k6.io/xk6/cmd/xk6@latest` <br />
+* Then build the binary `xk6 build --with github.com/szkiba/xk6-dashboard@latest` <br />
+* Then make sure your tunnel is up. To get through proxy and get xk6 to automatically open your dashboard, use the following command
+`HTTPS_PROXY=http://aideuser:aidepass@127.0.0.1:9443 ./k6 run --out dashboard=open script.js`
+You should see a screen in your browser populate with the data. if not the default url is http://127.0.0.1:5665/
+More information on visualization can be found here `https://k6.io/blog/ways-to-visualize-k6-results/`
 
